@@ -14,3 +14,14 @@ css 练习布局命名由css-前缀开头
 ### JS 实现练习
 
 - 正则过滤练习
+
+
+### Git 分支操作
+
+    //关联远程分支
+    $ cd your_repo_root/repo_name
+    $ git fetch origin
+    $ git checkout gh-pages
+
+    //推送分支到远程
+    git push --set-upstream origin gh-pages
