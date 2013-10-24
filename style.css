@@ -1,0 +1,318 @@
+
+/*
+ * learning javascript style
+ * 
+**/
+
+.wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#uyan_frame { width: 1000px; margin: 0 auto;}
+
+
+/*!
+ * typo-dev.css v0.9
+ * 依赖于 normalize.css
+ * 修改自 bootstrap，实现统一的标签样式(非生产线使用)
+ */
+
+/*
+ * 基于 如下 body 属性
+ * body { font: 14px/1.5 Tahoma,Arial,\5b8b\4f53,sans-serif;}
+ * 用于开发研究，默认 14px 字体
+ */
+
+.small { 
+    font-size: 80%;
+    color: #888;
+    font-weight: normal;
+}
+.em { 
+    font-style: italic;
+}
+
+/* p有上边距，在table中导致td的下边框未合并？ */
+table p { margin-top: 0;}
+
+/* 紧凑段落布局 TODO */
+.compact_p p { 
+    margin : 0;
+    line-height: 1.6em;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 20px 0 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 10px 0 10px 25px;
+    margin: 10px 0 10px 2em;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul.unstyled,
+ol.unstyled {
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.inline,
+ol.inline {
+    margin-left: 0;
+    list-style: none;
+}
+
+ul.inline > li,
+ol.inline > li {
+    display: inline-block;
+    /* IE7 inline-block hack */
+  
+    *display: inline;
+    padding-right: 5px;
+    padding-left: 5px;
+    *zoom: 1;
+}
+
+
+/*
+ * <li>&bull; <a href=""></a></li>
+ * 字体为宋体时 &bull; 能良好的表示 ul 列表项中的点
+ */
+
+ul.ul, 
+ol.ol {
+    font-family: \5b8b\4f53, sans-serif;
+}
+
+
+/*
+ * 同 ul/ol，在文章中应具备 table 基本格式 
+ * 此处仅设置样式 .table-info
+ * 出于统一的目的，更多表格设置请参看 tables.css
+ */
+
+.table-info th, 
+.table-info td, 
+.table-info td table caption{
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+}
+.table-info th {
+    background: #fbfbfb;
+}
+.table-info td {
+    background: #fff;
+}
+.table-info thead th {
+    background: #f1f1f1;
+}
+.table-info table .caption {
+    border-bottom:none;
+}
+
+dt,
+dd {
+    line-height: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 10px;
+}
+.dl-hor,
+.dl-horizontal {
+    *zoom: 1;
+}
+.dl-hor:before,
+.dl-hor:after,
+.dl-horizontal:before,
+.dl-horizontal:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.dl-hor:after,
+.dl-horizontal:after {
+    clear: both;
+}
+.dl-hor dt,
+.dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dl-horizontal dd {
+    margin-left: 180px;
+}
+.dl-hor dt {
+    width: 100px;
+    font-weight: normal;
+}
+.dl-hor dd {
+    margin-left: 120px;
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #ffffff;
+}
+
+abbr[title],
+abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #999999;
+}
+
+abbr.initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+blockquote {
+    padding: 0 15px;
+    margin: 15px 0;
+    border-left: 5px solid #ddd;
+    color: #555;
+}
+
+blockquote p {
+    margin: 0.6em 0 0.4em;
+    line-height: 1.5;
+}
+
+blockquote small {
+    display: block;
+    line-height: 20px;
+    color: #999;
+}
+
+blockquote small:before {
+    content: '\2014 \00A0';
+}
+blockquote em {
+    margin-left: 1em;
+    color: green;
+}
+blockquote blockquote {
+    margin-left: 2em;
+    padding: 0 15px;
+}
+
+blockquote.pull-right {
+    float: right;
+    float: none;
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid #ddd;
+    border-left: 0;
+}
+
+blockquote.pull-right p,
+blockquote.pull-right small {
+    text-align: right;
+}
+
+blockquote.pull-right small:before {
+    content: '';
+}
+
+blockquote.pull-right small:after {
+    content: '\00A0 \2014';
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+address {
+    display: block;
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+p { 
+    margin: 0 0 0 10px;
+    margin: 0.8em 0 0.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+h1 { font-size: 36px;}
+h2 { font-size: 28px;}
+h3 { font-size: 22px;}
+h4 { font-size: 18px;}
+h5 { font-size: 14px;}
+h6 { font-size: 12px;}
+
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 @引自sofish的typo.css */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 0.6em;
+    line-height: 1;
+    font-weight: bold;
+}
+h1 { font-size: 2.6em;}
+h2 { font-size: 2.0em;}
+h3 { font-size: 1.6em;}
+h4 { font-size: 1.3em;}
+h5 { font-size: 1em;}
+h6 { font-size: 12px;}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    line-height: 1;
+    color: #888;
+    display: inline-block;
+}
+h1 small { font-size: 24px;}
+h2 small { font-size: 18px;}
+h3 small { font-size: 14px;}
+h4 small { font-size: 14px;}
+h5 small,
+h6 small { font-size: 12px;}
+
+
+/* 重设无样式状态 */
+.typo .none li {
+    list-style-type: none !immportant;
+}
+.notypo * { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tc { text-align: center;}
