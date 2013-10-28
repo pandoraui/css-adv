@@ -2,11 +2,13 @@
  * make code pretty
  */
 .prettyprint {
-    width: 1000px;
+    width: 964px;
     margin: 20px auto;
     white-space: pre;
 }
- 
+.wrap .prettyprint {
+    width: auto;
+}
  
 .prettyprint *{
     background: none;
