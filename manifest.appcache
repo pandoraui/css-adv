@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# 以上折行必需要写
+
+#update 2013-10-29 修改该时间即可更新浏览器缓存
+#manifest 文件的建议的文件扩展名是：".appcache"。
+#请注意，manifest 文件需要配置正确的 MIME-type，即 "text/cache-manifest"。必须在 web 服务器上进行配置，如：AddType text/cache-manifest .appcache。
+
+
+
+CACHE:
+# 这部分写需要缓存的资源文件列表
+# 可以是相对路径也可以是绝对路径
+index.html
+style.css
+*
+
+NETWORK:
+# 可选
+# 这一部分是要绕过缓存直接读取的文件
+
+
+
+FALLBACK:
+# 可选
+# 这部分写当访问缓存失败后，备用访问的资源（比如 404 页面）
+# 每行两个文件，第一个是访问源，第二个是替换文件*.html /offline.html
