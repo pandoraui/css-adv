@@ -5,11 +5,12 @@
 **/
 
 .wrap {
-    width: 980px;
+    width: 1000px;
     margin: 0 auto;
 }
 
 #uyan_frame { width: 1000px; margin: 0 auto;}
+
 
 
 /*!
@@ -316,3 +317,8 @@ h6 small { font-size: 12px;}
 }
 
 .tc { text-align: center;}
+
+
+@media (min-width: 1240px) {
+    .wrap,#uyan_frame { width: 1200px; }
+}
